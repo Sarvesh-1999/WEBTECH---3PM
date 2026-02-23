@@ -71,28 +71,71 @@ Lorem ipsum dolor sit
     -->
 
     <!-- EXAMPLE OF BLOCK ELEMENTS -->
-    <div style="background-color: orange;" >i am block element</div>
-    <div style="background-color: lightblue;" >i am block element</div>
-    <div style="background-color: green;" >i am block element</div>
+    <div style="background-color: orange">i am block element</div>
+    <div style="background-color: lightblue">i am block element</div>
+    <div style="background-color: green">i am block element</div>
 
     <!-- EXAMPLE OF INLINE ELEMENTS -->
-    <span style="background-color: lightcoral;" >i am inline element</span>
-    <span style="background-color: lightgreen;" >i am inline element</span>
-    <span style="background-color: lightpink;" >i am inline element</span>
+    <span style="background-color: lightcoral">i am inline element</span>
+    <span style="background-color: lightgreen">i am inline element</span>
+    <span style="background-color: lightpink">i am inline element</span>
 
-    <div style="background-color: yellow;">
-        <h1>John   <span style="color: red;">Doe</span> </h1>
-        <p>Web Developer</p>
-        <button>Hire me</button>
+    <div style="background-color: yellow">
+      <h1>John <span style="color: red">Doe</span></h1>
+      <p>Web Developer</p>
+      <button>Hire me</button>
     </div>
 
-    <div style="background-color: aqua; height: 100px; width: 100px;">
-        BOX 1
-    </div>
+    <div style="background-color: aqua; height: 100px; width: 100px">BOX 1</div>
 
-    <span style="background-color: limegreen; height: 100px; width: 100px;">
-        BOX 2
+    <span style="background-color: limegreen; height: 100px; width: 100px">
+      BOX 2
     </span>
+
+    <!-- INLINE BLOCK ELEMENTS -->
+    <!-- 
+    path are of 2 types:
+    1) relative : image is present on project directory
+    ./ => to target current folder
+    ../ => to move one folder back
+    / => to target root folder
+    
+    2) absolute : image is present in server
+    https://....
+     -->
+    <img
+      src="/images/happypatient.png"
+      alt="Happy Patient"
+      height="200"
+      width="200"
+    />
+    <img
+      src="https://cdn-icons-png.flaticon.com/512/219/219969.png"
+      alt="User"
+      height="200"
+      width="200"
+    />
+
+    <hr />
+
+    <!-- HYPERLINKS -->
+    <!-- 
+      target attribute has 4 values:
+      1) _self : to open webpage in same tab ( DEFAULT )
+      2) _blank : to open webpage in new tab
+      3) _parent : to open webpage in parent webpage
+      4) _top : to open webpage in super most parent
+     -->
+
+    <a href="https://www.flipkart.com" target="_self">flipkart</a>
+    <a href="./newpage.html" target="_blank">NewPage</a>
+
+    <!-- NESTED WEBPAGE -->
+    <iframe src="./Demo1.html" frameborder="1" width="500"></iframe>
+
+    <hr />
+    <a href="tel:9876543210">9876543210</a>
+    <a href="mailto:johndoe@gmail.com">johndoe@gmail.com</a>
 
   </body>
 </html>
