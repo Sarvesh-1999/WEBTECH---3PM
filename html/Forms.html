@@ -10,79 +10,169 @@
       <h1>Forms in HTML</h1>
     </center>
 
+    <!-- <fieldset>
+        <legend align="center">Fill this form</legend>
+
+      <form>
+        <div>
+          <label for="username">Username : </label>
+
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter Username"
+            required
+          />
+
+          <sup style="color: red">*</sup>
+        </div>
+
+        <div>
+          <label for="email">Email :</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter Email"
+          />
+        </div>
+
+        <div>
+          <label for="password">Password :</label>
+
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter Password"
+          />
+        </div>
+
+        <div>
+          <label for="phoneno">Phone No :</label>
+
+          <input
+            type="tel"
+            id="phoneno"
+            name="phoneno"
+            placeholder="Enter Phoneno"
+            minlength="10"
+            maxlength="10"
+          />
+        </div>
+
+        <div>
+          <label for="gender">Gender : </label>
+
+          <label for="male">male</label>
+          <input type="radio" id="male" name="gender" value="male" />
+
+          <label for="female">female</label>
+          <input type="radio" id="female" name="gender" value="female" />
+        </div>
+
+        <div>
+          <label for="dob">Date of birth :</label>
+          <input type="date" id="dob" min="2000-01-01" max="2025-12-31" />
+        </div>
+
+        <div>
+          <label for="course">Select Course :</label>
+
+          <select name="course" id="course">
+            <option value="" disabled selected>select here</option>
+            <option value="java fullstack">Java Fullstack</option>
+            <option value="python fullstack">Python Fullstack</option>
+            <option value="mern stack">MERN Stack</option>
+            <option value="testing">Testing</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="branch">Institute Branch : </label>
+          <input
+            type="text"
+            name="branch"
+            id="branch"
+            placeholder="Enter Branch Name"
+            list="branch-list"
+          />
+
+          <datalist id="branch-list">
+            <option value="Noida">Noida</option>
+            <option value="Gurugram">Gurugram</option>
+            <option value="Delhi">Delhi</option>
+          </datalist>
+        </div>
+
+        <div>
+          <label for="expericence">Experience : </label>
+          <input type="number" name="expericence" id="expericence" min="0" />
+          <span>In Years</span>
+        </div>
+
+        <div>
+          <label for="address">Address :</label>
+          <textarea
+            name="address"
+            id="address"
+            placeholder="Enter Address"
+          ></textarea>
+        </div>
+
+        <div>
+          <label for="resume">Upload Resume : </label>
+          <input type="file" name="resume" id="resume" multiple />
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+
+    </fieldset> -->
+
     <form>
-      <div>
-        <label for="username">Username : </label>
+      <table border="1" cellpadding="10" cellspacing="5">
+        <thead>
+          <tr>
+            <th colspan="2">Registration Form</th>
+          </tr>
+        </thead>
 
-        <input
-          type="text"
-          id="username"
-          name="username"
-          placeholder="Enter Username"
-          required
-        />
+        <tbody>
+          <tr>
+            <td>
+              <label for="firstname">First Name</label>
+            </td>
+            <td>
+              <input type="text" name="firstname" id="firstname" />
+            </td>
+          </tr>
 
-        <sup style="color: red">*</sup>
-      </div>
+          <tr>
+            <td>
+              <label for="">Gender :</label>
+            </td>
+            <td>
+              <input type="radio" name="gender" id="male" value="male"/>
+              <label for="male">male</label>
+              <input type="radio" name="gender" id="female" value="female"/>
+              <label for="female">female</label>
+              <input type="radio" name="gender" id="others" value="others"/>
+              <label for="others">others</label>
+            </td>
+          </tr>
 
-      <div>
-        <label for="email">Email :</label>
-        <input type="email" id="email" name="email" placeholder="Enter Email" />
-      </div>
-
-      <div>
-        <label for="password">Password :</label>
-
-        <input
-          type="password"
-          id="password"
-          name="password"
-          placeholder="Enter Password"
-        />
-      </div>
-
-      <div>
-        <label for="phoneno">Phone No :</label>
-
-        <input
-          type="tel"
-          id="phoneno"
-          name="phoneno"
-          placeholder="Enter Phoneno"
-          minlength="10"
-          maxlength="10"
-        />
-      </div>
-
-      <div>
-        <label for="gender">Gender : </label>
-
-        <label for="male">male</label>
-        <input type="radio" id="male" name="gender" value="male" />
-
-        <label for="female">female</label>
-        <input type="radio" id="female" name="gender" value="female" />
-      </div>
-
-      <div>
-        <label for="dob">Date of birth :</label>
-        <input type="date" id="dob" min="2000-01-01" max="2025-12-31" />
-      </div>
-
-      <div>
-        <label for="course">Select Course :</label>
-        
-        <select name="course" id="course">
-          <option value="" disabled selected>select here</option>
-          <option value="java fullstack">Java Fullstack</option>
-          <option value="python fullstack">Python Fullstack</option>
-          <option value="mern stack">MERN Stack</option>
-          <option value="testing">Testing</option>
-        </select>
-
-      </div>
-
-      <button type="submit">Submit</button>
+          <tr>
+            <td style="empty-cells: hide"></td>
+            <td>
+              <button type="submit">Submit</button>
+              &nbsp; &nbsp; &nbsp;
+              <button type="reset">Reset</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </form>
   </body>
 </html>
