@@ -1,0 +1,18 @@
+@import url("./basics.css");
+
+
+h4 {
+  background-color: aqua;
+}
+h1 {
+  background-color: black;
+  color: white;
+}
+h5 {
+  background-color: pink;
+}
+
+div {
+  background-color: darkgreen !important ;
+  color: white;
+}
