@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        background-color: whitesmoke;
+        font-family: fantasy;
+      }
+
+      #subheading {
+        background-color: red;
+      }
+      .heading3 {
+        background-color: yellow;
+      }
+      .text-style {
+        font-family: cursive;
+      }
+      div {
+        background-color: lightgreen;
+      }
+
+      section {
+        /* 3st Priority */
+        background-color: aqua;
+      }
+      #box {
+        /* 1st Priority */
+        background-color: violet;
+      }
+      .container {
+        /* 2st Priority */
+        background-color: blue;
+      }
+
+      article,
+      #navbar,
+      .sidebar {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Learn Simple Selectors</h1>
+    <!-- 
+    There are 5 types:
+    1) universal (*) : to target all the tags present in html
+    2) id (#) : to target single element uniquely
+    3) class (.) : to target multiple similar or different elements
+    4) element (tagname) : to target multiple same type of elements
+    5) group (,) : to group multiple elements together and apply styling to it
+    -->
+
+    <h2 id="subheading">Target me using ID</h2>
+
+    <h3 class="heading3">Target me using class</h3>
+    <p class="heading3 text-style">Target me using class</p>
+    <h6 class="heading3">Target me using class</h6>
+
+    <div>Target me using tagname</div>
+    <div>Target me using tagname</div>
+    <div>Target me using tagname</div>
+
+    <section class="container" id="box">Lorem ipsum dolor sit amet.</section>
+
+    <article>I am Article</article>
+    <nav id="navbar">I am Nav</nav>
+    <aside class="sidebar">I am Aside</aside>
+  </body>
+</html>
