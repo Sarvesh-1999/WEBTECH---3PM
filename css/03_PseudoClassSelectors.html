@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a:link {
+        color: aqua;
+      }
+      a:visited {
+        color: black;
+      }
+      a:active {
+        color: chartreuse;
+      }
+
+      h1:active {
+        background-color: red;
+        color: white;
+        user-select: none;
+      }
+
+      ul > li:first-child {
+        background-color: orange;
+      }
+      ul > li:last-child {
+        background-color: green;
+      }
+      ul > li:nth-child(3) {
+        background-color: blue;
+      }
+
+
+      main > nav:first-of-type{
+        background-color: red;
+      }
+      main > nav:last-of-type{
+        background-color: yellow;
+      }
+      main > nav:nth-of-type(2){
+        background-color: gold;
+      }
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <h1>Learn Pseudo Class Selectors</h1>
+    <!-- 
+    Pseudo Class Selectors are denoted by (:)
+    :link
+    :active
+    :visited
+    :hover
+    :first-of-type
+    :last-of-type
+    :nth-of-type()
+    :first-child
+    :last-child
+    :nth-child()
+    -->
+
+    <a href="https://flipkart.com">Flipkart</a>
+    <a href="https://amazon.in">Amazon</a>
+    <a href="./Abc.html">Abc</a>
+
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+      <li>REACT.JS</li>
+      <li>JAVA</li>
+    </ul>
+
+
+    <main>
+        <div>div 1</div>
+        <nav>nav 1</nav>
+        <div>div 2</div>
+        <aside>aside 1</aside>
+        <div>div 3</div>
+        <nav>nav 2</nav>
+        <div>div 4</div>
+        <aside>aside 2</aside>
+        <nav>nav 3</nav>
+        <div>div 5</div>
+    </main>
+
+
+  </body>
+</html>

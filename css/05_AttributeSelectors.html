@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div[name] {
+        background-color: yellow;
+      }
+      div[name="box1"] {
+        background-color: red;
+      }
+      div[name~="wrapper"] {
+        background-color: orange;
+      }
+      div[name|="card"] {
+        background-color: green;
+      }
+      
+      /* starts-with */
+      div[name^="h"] {
+        background-color: aqua;
+      }
+
+      /* ends-with */
+      div[name$="nks"] {
+        background-color: blue;
+      }
+
+      /* in-between */
+      div[name*="oo"] {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Learn Attribute Selector</h1>
+
+    <div name="box1">Lorem ipsum dolor sit amet.</div>
+
+    <div name="content wrapper">Lorem ipsum dolor sit amet.</div>
+
+    <div name="card-container">Lorem ipsum dolor sit amet.</div>
+
+    <div name="header">Lorem ipsum dolor sit amet.</div>
+
+    <div name="links">Lorem ipsum dolor sit amet.</div>
+
+    <div name="footer">Lorem ipsum dolor sit amet.</div>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      p::first-letter {
+        color: red;
+        font-size: 50px;
+      }
+      p::first-line {
+        color: orange;
+      }
+      p::selection {
+        background-color: black;
+        color: white;
+      }
+
+      /* ol > li::marker {
+        color: blueviolet;
+      } */
+
+      ::marker {
+        color: red;
+      }
+
+      h1::before {
+        content: "👋";
+        font-size: 100px;
+      }
+      h1::after {
+        content: "🩷";
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Learn Pseudo Element Selectors</h1>
+    <!-- 
+    Pseudo Element Selectors are denoted by (::)
+    ::first-letter
+    ::first-line
+    ::selection
+    ::marker
+    ::after
+    ::before
+    -->
+
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
+      consequuntur perferendis, vitae provident dolore iste quo, soluta atque
+      libero totam ducimus non esse ad voluptatem suscipit? Eius commodi
+      consectetur labore corporis, eaque quo nostrum odio molestiae rem dicta
+      similique fuga neque error. Vero blanditiis architecto excepturi alias
+      aperiam quia dignissimos.
+    </p>
+
+    <ol>
+      <li>Frontend</li>
+      <li>Backend</li>
+    </ol>
+  </body>
+</html>
