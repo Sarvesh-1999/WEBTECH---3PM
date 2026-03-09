@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --bgColor: royalblue; /*GLOBAL VARIABLE*/
+      }
+
+      .box1 {
+        --textColor: white; /*LOCAL VARIABLE*/
+        height: 200px;
+        width: 200px;
+        font-size: 20px;
+        background-color: var(--bgColor);
+        color: var(--textColor);
+      }
+      .box2 {
+        height: 200px;
+        width: 500px;
+        background-color: var(--bgColor);
+        color: var(--textColor);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Learn CSS Variables</h1>
+
+    <div class="box1">Lorem ipsum dolor sit amet.</div>
+
+    <br />
+
+    <div class="box2">Lorem ipsum dolor sit amet.</div>
+  </body>
+</html>

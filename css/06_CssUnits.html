@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box1 {
+        height: 200px;
+        width: 200px;
+        background-color: yellow;
+        font-size: 50px;
+      }
+
+      .box2 {
+        height: 50vh;
+        width: 50vw;
+        background-color: pink;
+      }
+
+      .parent {
+        height: 50vh;
+        width: 50vw;
+        background-color: royalblue;
+      }
+      .child {
+        height: 50%;
+        width: 50%;
+        background-color: skyblue;
+      }
+
+      /* 
+      em values depends on current element's font size
+      by default 1em = 16px
+      */
+      .box3 {
+        height: 10em;
+        width: 10em;
+        background-color: lightgreen;
+        font-size: 20px;
+      }
+
+      /* 
+      rem values depends upon root element's font size
+      by default 1rem = 16px
+      */
+
+      /* html {
+        font-size: 30px;
+      } */
+
+      :root {
+        font-size: 30px;
+      }
+
+      .box4 {
+        height: 1rem;
+        width: 1rem;
+        background-color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Learn CSS Units</h1>
+    <!-- 
+    There are 5 types of units
+    1) px    -- FIXED / ABSOLUTE UNIT
+    2) %     -- RELATIVE UNIT
+    3) vh/vw -- RELATIVE UNIT
+    4) em    -- RELATIVE UNIT
+    5) rem   -- RELATIVE UNIT
+    -->
+
+    <!-- <div class="box1">PIXELS</div> -->
+
+    <!-- <div class="box2">
+        VIEWPORT HEIGHT / VIEWPORT WIDTH
+    </div> -->
+
+    <!-- <div class="parent">
+      <div class="child"></div>
+    </div> -->
+
+    <!-- <div class="box3"></div> -->
+
+    <div class="box4"></div>
+  </body>
+</html>
