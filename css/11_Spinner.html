@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .spinner {
+        height: 100px;
+        width: 100px;
+        border: 10px solid gainsboro;
+        margin: 10px auto;
+        border-top: 10px solid gray;
+        border-radius: 50%;
+        animation-name: loader;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+
+      @keyframes loader {
+        from {
+          transform: rotate(0deg);
+          border-top: 10px solid gray;
+        }
+        to {
+          transform: rotate(360deg);
+          border-top: 10px solid red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h4>Spinner using animation</h4>
+
+    <div class="spinner"></div>
+  </body>
+</html>
