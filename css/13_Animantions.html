@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box1 {
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+        position: absolute;
+        animation-name: boxmove;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+      }
+      @keyframes boxmove {
+        0% {
+          top: 0;
+          left: 0;
+          background-color: yellow;
+          border-radius: 0;
+        }
+
+        25% {
+          top: 0;
+          left: calc(100% - 200px);
+          background-color: orange;
+        }
+
+        50% {
+          top: calc(100% - 200px);
+          left: calc(100% - 200px);
+          background-color: orangered;
+          border-radius: 25%;
+        }
+
+        75% {
+          top: calc(100% - 200px);
+          left: 0;
+          background-color: red;
+        }
+
+        100% {
+          top: 0;
+          left: 0;
+          background-color: yellow;
+          border-radius: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <article class="box1"></article>
+  </body>
+</html>

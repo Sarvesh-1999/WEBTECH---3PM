@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      h1 {
+        text-align: center;
+        font-size: 14px;
+        padding: 10px;
+        background-color: yellow;
+        transition: 0.2s;
+      }
+
+      /* mobile medium */
+      @media (min-width: 375px) {
+        h1 {
+          background-color: pink;
+          font-size: 16px;
+          padding: 14px;
+        }
+      }
+
+      /* mobile large */
+      @media (min-width: 425px) {
+        h1 {
+          background-color: lightblue;
+          font-size: 20px;
+          padding: 16px;
+        }
+      }
+
+      /* tablet */
+      @media (min-width: 768px) {
+        h1 {
+          background-color: royalblue;
+          font-size: 24px;
+          padding: 20px;
+          color: white;
+        }
+      }
+
+      /* laptop */
+      @media (min-width: 1024px) {
+        h1 {
+          background-color: black;
+          font-size: 28px;
+          padding: 24px;
+          color: white;
+        }
+      }
+
+      /* laptop large */
+      @media (min-width: 1440px) {
+        h1 {
+          background-color: red;
+          font-size: 30px;
+          padding: 26px;
+          color: black;
+        }
+      }
+
+      .navbar {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: violet;
+        color: white;
+        font-weight: 600;
+      }
+      .nav-links {
+        display: flex;
+        align-items: center;
+        list-style: none;
+      }
+      .nav-links > li {
+        padding: 5px 20px;
+      }
+      .hamburger {
+        display: none;
+        transform: rotate(90deg);
+      }
+
+      @media (max-width: 425px) {
+        .nav-links {
+          display: none;
+        }
+        .hamburger {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Learn Media Queries</h1>
+
+    <hr />
+
+    <nav class="navbar">
+      <div class="logo">Logo</div>
+
+      <ul class="nav-links">
+        <li>Home</li>
+        <li>About</li>
+        <li>Projects</li>
+        <li>Contacts</li>
+      </ul>
+
+      <div class="hamburger">|||</div>
+    </nav>
+  </body>
+</html>
